@@ -6,7 +6,7 @@ import jsonToTS from 'json-to-ts';
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-	let disposable = vscode.commands.registerCommand('jsontots.helloWorld', async () => {
+	let disposable = vscode.commands.registerCommand('jsontots.convert', async () => {
     const jsonInput = await vscode.window.showInputBox({ prompt: '请输入JSON' });
 		console.log("jsonInput: ", jsonInput);
     if (!jsonInput) {return;}
